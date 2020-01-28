@@ -28,7 +28,8 @@ int main()
   cout << "Give a number for countdown > "; 
 
   //Accept input
-  cin >> n; 
+  //cin >> n;
+  n = validateInt(n); 
 
   //Processing with loops
   while (n > 0)   //while "n" is greater than 0, keep looping
@@ -61,6 +62,13 @@ int main()
 
   } while (z != 0); //while has the ;
 
+  //processing for loop
+  for (int i = 10; i > 0; i--)
+  {
+    cout << i << ", ";
+  }
+
+  cout << "FIRE!" << endl;
 
    //***********Validating int data type******************/
 	int input = 0;
