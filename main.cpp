@@ -6,7 +6,10 @@
 	Keeping Dr. McMillan from breaking my code, defend against "dark side of the force",
 	and/or legitimate user error. 
 	//Try and Catch blocks are used in error checking
-	Teacher: Dr. Tyson McMillan, Ph.D.  
+	Teacher: Dr. Tyson McMillan, Ph.D. 
+
+  STUDENT (Lockwood): 27 Jan 2020
+  IDE: Repl.it
 */
 #include <cstdlib>  // Provides EXIT_SUCCESS
 #include <iostream>  // Provides cout, cerr, endl
@@ -18,6 +21,47 @@ using namespace std;
 
 int main()
 {
+  //declare and initilize variable
+  int n = 0; 
+
+  //prompt for input
+  cout << "Give a number for countdown > "; 
+
+  //Accept input
+  cin >> n; 
+
+  //Processing with loops
+  while (n > 0)   //while "n" is greater than 0, keep looping
+  {
+    cout << n << ", ";  //print current value of "n", ...exitPoint
+    --n;
+  }
+  cout << "FIRE!" << endl;
+
+  //prefix vs. postfix increment (++) or decrement (--)
+  int a = 0, b = 3;
+  a = ++b;
+  //a contains 4, b contains 4
+  cout << "a = " << a << " b = " << b << endl;
+
+  //reset values
+  a = 0, b = 3;
+  a = b++;
+  //a contains 3, b contains 4
+  cout << "a = " << a << " b = " << b << endl;
+
+  //processing do-while loop
+  unsigned int z = 0;
+
+  do //all of this
+  {
+    cout << "Enter a number (0 to end): ";
+    cin >> z;
+    cout << "You entered: " << z << "\n";
+
+  } while (z != 0); //while has the ;
+
+
    //***********Validating int data type******************/
 	int input = 0;
 	input = validateInt(input); //validate my integer by function call, save that value into input
